@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Details</title>
+    
+  </head>
+  <body>
+  <h1>Form  Details</h1>
+             
+  
+ <Table border="1">
+ 
+	  <tr>
+	  <th>employeeId</th>
+	  <th>employeeName</th>
+	  <th> employeeDesignation</th>
+	  <th>Salary</th>
+	  <th>DOB</th>
+	  <th> Phone Number</th>
+	  <th>Email</th>
+	  <th> Joining Date</th>
+	  </tr>
+  <tr th:each="details:${form}">
+  <th th:text="${details.employeeId}"></th>
+   <th th:text="${details.employeeName}"></th>
+    <th th:text="${details.employeeDesignation}"></th>
+    
+   <th th:text="${details.employeeSalary}"></th>
+    <th th:text="${details.employeeDOB}"></th>
+    
+       <th th:text="${details.employeePhoneNumber}"></th>
+    
+   <th th:text="${details.employeeEmail}"></th>
+    <th th:text="${details.employeeJoiningDate}"></th>
+  </tr>
+  
+ 
+
+    
+    
+   
+    </table>
+   <button> Go Back</button>
+  </body>
+</html>
